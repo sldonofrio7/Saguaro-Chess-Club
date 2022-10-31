@@ -3,9 +3,11 @@ import Image from 'next/image'
 
 const Home = () => {
   return (
-   <div className="text-4xl flex justify-center align-middle mt-20 m-auto">
-    <h1>Saguaro Chess</h1>
-   </div>
+    
+    <div className="flex justify-center items-center h-screen">
+      <h1 className="text-4xl">Saguaro Chess Club</h1>
+    </div>
+
   )
 }
 
