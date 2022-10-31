@@ -1,12 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NavBar = () => {
     return ( 
 
-        <nav>
-            <div className="text-xs flex justify-end items-end mt-2.5 mx-auto mb-20 py-2.5 px-0">
-                <Link href="/">home</Link>
-                <Link href="/about">about</Link>
+        <nav className="flex justify-between">
+            <div className="m-6">
+                <Image src="/logo.png" alt="logo" width="50" height="50"></Image>
+            </div>
+            <div className= "space-x-5 p-10">
+                <Link href="/" className="hover:text-xl">Home</Link>
+                <Link href="/about" className="hover:text-xl">About</Link>
             </div>
         </nav>
 
